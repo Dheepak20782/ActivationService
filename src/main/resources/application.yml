@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    #hostname: localhost
+    #nonSecurePort: 9000
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    
+#management:
+#port: 9900
+#address: 127.0.0.1
+    
+#server:
+#port: 9000
+  
